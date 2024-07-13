@@ -8,7 +8,7 @@ const HomePage = () => {
 
   return (
     <div>
-      <h1 className='title'>Thank You, For You have successfully Logged IN</h1>
+      <h1 className='title'>Thank You, For You have successfully signed In</h1>
       <div className='details'>
         <h1>Your username is {name}</h1>
         <h1>Your email is {email}</h1>
