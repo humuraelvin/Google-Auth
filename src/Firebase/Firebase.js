@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getAuth ,GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDZo3KUEL7KoL9K8WcvOL-w_Fxa8oI0zjQ",
@@ -19,6 +20,9 @@ console.log(analytics);
 export const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
 
+const navigate = useNavigate();
+
+
 export const signInWithGoogle = () => {
     signInWithPopup(auth, provider)
     .then((result) => {
@@ -30,6 +34,9 @@ export const signInWithGoogle = () => {
         localStorage.setItem("name", user_name);
         localStorage.setItem("email", user_email);
         localStorage.setItem("profilePicture", profilePic);
+
+
+        navigate('/home');
 
     }).catch((error) => {
         console.log(error);
