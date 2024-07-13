@@ -16,10 +16,17 @@ body{
 button {
     display: flex;
     flex-direction: row;
+    position: absolute;
+    align-items: center;
+    top: 30%;
+    left: 38%;
+    width: 30rem;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    cursor: pointer;
 }
 
 button img{
     height: 10rem;
 }
 
-button h1
