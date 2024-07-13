@@ -65,5 +65,7 @@ button img{
     height: 3rem;
     margin-left: 12rem;
     font-size: 1rem;
+    color: red;
+    font-weight: 500;
 }
 
