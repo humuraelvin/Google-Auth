@@ -16,6 +16,20 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 console.log(analytics);
 
-const auth = getAuth(app);
+export const auth = getAuth(app);
 const provider = GoogleAuthProvider();
+
+const signInWithGoogle = () => {
+    signInWithPopup(auth, provider)
+    .then((result) => {
+
+        const user_name = result.user.displayName;
+        const user_email = result.user.email
+        const profilePic = result.user.photoURL;
+
+    }).catch((error) => {
+        console.log(error);
+        alert(error);
+    })
+}
 
