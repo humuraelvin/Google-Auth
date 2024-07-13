@@ -19,6 +19,7 @@ const HomePage = () => {
       <div className='details'>
         <div>
             <h1>Your username is {name}</h1>
+            <br /><br />
             <h1>Your email is {email}</h1>
         </div>
         <div>
