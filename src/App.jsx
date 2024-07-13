@@ -10,7 +10,10 @@ function App() {
   return (
     <>
      <BrowserRouter>
-      
+        <Routes>
+          <Route path='/' exact element={<LoginPage />} />
+          <Route path='/home' exact element={<HomePage />} />
+        </Routes>
      </BrowserRouter>
     </>
   )
