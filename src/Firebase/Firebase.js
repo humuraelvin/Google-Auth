@@ -16,3 +16,6 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 console.log(analytics);
 
+const auth = getAuth(app);
+const provider = GoogleAuthProvider();
+
