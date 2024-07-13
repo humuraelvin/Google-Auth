@@ -17,7 +17,7 @@ const analytics = getAnalytics(app);
 console.log(analytics);
 
 export const auth = getAuth(app);
-const provider = GoogleAuthProvider();
+const provider = new GoogleAuthProvider();
 
 export const signInWithGoogle = () => {
     signInWithPopup(auth, provider)
