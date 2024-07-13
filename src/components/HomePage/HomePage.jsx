@@ -28,7 +28,7 @@ const HomePage = () => {
       </div>
 
         <div className='btn'>
-            <button>
+            <button onClick={logout}>
                 logout
             </button>
         </div>
