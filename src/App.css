@@ -57,3 +57,13 @@ button img{
     border-radius: 50%;
 }
 
+.btn button{
+    margin-top: 32rem;
+    width: 7rem;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    margin-left: 12rem;
+    font-size: 1rem;
+}
+
