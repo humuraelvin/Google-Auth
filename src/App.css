@@ -8,3 +8,18 @@
     outline: none;
     font-family: 'Roboto', sans-serif;
 }
+
+body{
+    background-color: #ccc;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+}
+
+button img{
+    height: 10rem;
+}
+
+button h1
