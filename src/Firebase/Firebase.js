@@ -27,6 +27,10 @@ const signInWithGoogle = () => {
         const user_email = result.user.email
         const profilePic = result.user.photoURL;
 
+        localStorage.setItem("name", user_name);
+        localStorage.setItem("email", user_email);
+        localStorage.setItem("profilePicture", profilePic);
+
     }).catch((error) => {
         console.log(error);
         alert(error);
